@@ -2,8 +2,20 @@ import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import React from 'react';
 import './Controls.css';
+import { TextField } from '@mui/material';
 
-export default function Controls({ head, setHead, body, setBody, shoes, setShoes, handleChange }) {
+export default function Controls({
+  head,
+  setHead,
+  body,
+  setBody,
+  shoes,
+  setShoes,
+  handleChange,
+  catchphrase,
+  newCatchphrase,
+  addCatchphrase,
+}) {
   return (
     <div className="controls">
       <div className="form-select-head">
@@ -49,6 +61,14 @@ export default function Controls({ head, setHead, body, setBody, shoes, setShoes
           <MenuItem value="shoe3">Shoe 3</MenuItem>
         </Select>
       </div>
+
+      <TextField
+        value={catchphrase}
+        onChange={(e) => {
+          newCatchphrase(e.target.value);
+        }}
+      ></TextField>
+      <button onClick={() => addCatchphrase()}></button>
     </div>
   );
 }
