@@ -44,9 +44,9 @@ export default function Controls({ head, setHead, body, setBody, shoes, setShoes
             handleChange('shoes');
           }}
         >
-          <MenuItem value="shoe1">Lizzo shoes</MenuItem>
-          <MenuItem value="shoe2">Clairo shoes</MenuItem>
-          <MenuItem value="shoe3">Taylor Swift shoes</MenuItem>
+          <MenuItem value="shoe1">Shoe 1</MenuItem>
+          <MenuItem value="shoe2">Shoe 2</MenuItem>
+          <MenuItem value="shoe3">Shoe 3</MenuItem>
         </Select>
       </div>
     </div>
