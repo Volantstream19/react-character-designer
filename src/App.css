@@ -1,5 +1,11 @@
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(./assets/Concert.jpg);
+  background-size: cover;
 }
 
 .App-logo {

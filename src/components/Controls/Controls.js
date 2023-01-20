@@ -1,3 +1,5 @@
+// MUI is like a prestyled element. it just adds basic styling to whatever element you import //
+
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import React from 'react';
@@ -68,7 +70,10 @@ export default function Controls({
           newCatchphrase(e.target.value);
         }}
       ></TextField>
-      <button onClick={() => addCatchphrase()}></button>
+      <button className="button" onClick={() => addCatchphrase()}>
+        {' '}
+        +
+      </button>
     </div>
   );
 }
