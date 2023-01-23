@@ -1,0 +1,16 @@
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.button {
+  position: fixed;
+  justify-content: center;
+  scale: 200%;
+  right: 32%;
+  top: 55.7%;
+}
